@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+
+    <style>
+        body
+        {
+            background-color:#077A7D;
+        }
+        div
+        {
+            height: 200px;
+            width: 200px;
+            background-color: #7AE2CF;
+            border: 7px solid yellow;
+            border-radius: 9px;
+            margin: auto;
+            text-align: center;
+            padding: 5px;
+            color: black;
+        }
+        div:hover{
+            border-color: brown;
+        }
+        P
+        {
+            
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <p>QUESTION NO:01</p>
+    <hr>
+    <div>
+    <script>
+        function sortarray(){
+        let arr = [1,4,3,6,87,55]
+        document.write("original array is: ", arr)
+        
+        arr.sort(function(a,b) {return (a-b)})
+        document.write("<br>sort array is: ", arr)
+        }
+                sortarray()
+        </script>
+    </div>
+<hr>
+    <P>QUESTION NO:02</P><hr>
+    <div>
+        <script>
+        function concatwoarray()
+        {
+            let x = [25,11]
+            let y = [20,10]
+            let concatarray = x.concat(y);
+            document.write("1st array is: ",x)
+            document.write("<br>2nd array is: ",y)
+            document.write("<br>concat array is: ",concatarray)
+        }
+        concatwoarray()
+        </script>
+    </div>
+<hr>
+    <P>QUESTION NO:03</P><hr>
+    <div>
+        <script>
+            function removefirstelement()
+            {
+            let x = [ 25,11,2002,67,32]
+            let y = x.shift()
+            document.write("remove first element from array: ", y)
+            document.write("<br>after remove first element from array: ",x)
+            }
+            removefirstelement()
+        </script>
+    </div>
+</body>
+</html>
